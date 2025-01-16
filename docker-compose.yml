@@ -1,0 +1,23 @@
+services:
+  common:
+    build:
+      context: .  # Use the root directory as the build context
+      dockerfile: Dockerfile  # Point to the Dockerfile in the root directory
+    platform: linux/amd64  # Specify platform to avoid mismatch
+    image: python:3.12-slim
+    volumes:
+      - ./src:/app  # Mount the src folder where your code lives
+      - ~/.aws:/root/.aws:ro  # Mount AWS credentials (read-only)
+      - ./local_data:/tmp  # Persist local data in the project's root folder
+    environment:
+      - AWS_PROFILE=${AWS_PROFILE}  # Use your selected AWS profile
+      - MONGO_URI=${MONGO_URI}  # MongoDB URI
+      - STAGE=${STAGE}
+      - HISTORIES_COLLECTION=${HISTORIES_COLLECTION}
+      - DATABASE=${DATABASE}
+      - SESSIONS_COLLECTION=${SESSIONS_COLLECTION}
+      - LEARNING_ASSISTANTT_ID=${LEARNING_ASSISTANTT_ID}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SESSION_ID=${SESSION_ID}
+      - SUB=${SUB}
+      - S3_BUCKET=${S3_BUCKET}
