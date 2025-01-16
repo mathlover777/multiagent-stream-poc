@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+typing-extensions
+openai
+pymongo
