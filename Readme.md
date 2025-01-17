@@ -2,10 +2,6 @@
 
 Check out the demo video below:
 
-[![Chat Demo](chat-demo.mp4)](chat-demo.mp4)
-
-
-
 
 https://github.com/user-attachments/assets/a77bc953-1145-43d6-8e0f-d8726122cfff
 
