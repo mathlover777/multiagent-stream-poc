@@ -1,3 +1,11 @@
+## Demo
+
+Check out the demo video below:
+
+[![Chat Demo](chat-demo.mp4)](chat-demo.mp4)
+
+> Click the thumbnail above to play the video directly in GitHub.
+
 
 # Multi-agent Chat Streaming with tool use with FastAPI
 
