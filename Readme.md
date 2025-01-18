@@ -29,6 +29,10 @@ This repository extends the [OpenAI Cookbook example](https://cookbook.openai.co
 
 ### Running the Application
 -  Set up the `.env.dev` file with necessary variables (e.g., database credentials, API keys, etc
+- Build the application with Docker
+```bash
+docker compose --env-file .env.dev --profile fastapi_chat build
+```
 - Start the application with Docker
 ```bash
 docker compose --env-file .env.dev --profile fastapi_chat up
