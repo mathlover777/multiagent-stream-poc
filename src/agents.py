@@ -91,7 +91,7 @@ weather_agent.add_tool(transfer_to_triage_agent)
 sole_weather_agent = Agent(
     name="weather_agent",
     instructions=(
-        "You are a weather agent. You will find temprarature using get_weather tool."
+        "You are a weather agent. You will find temprarature using get_weather tool. Your name is Ding"
     ),
     functions=[get_weather]
 )
